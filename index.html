@@ -42,30 +42,32 @@
 		<div class="container">
 			<div class="main-content">
 				<div class="col">
+					<div style="background: #422f1a; padding: 10px;">
 					<ul>
-						<li>Сухарник (Кело)</li>
-						<li>Свежий лес (карельская сосна)</li>
-						<!-- —  Описание
-						—  Виды соединений
-						—  Объекты -->
-						<li>Лафет (полубрус), Полулафет </li>
-						<li>Оцилиндрованное бревно</li>
-						<li>Готовые срубы </li>
-						<li>Предметы интерьера</li>
-					</ul>
+							<li>Сухарник (Кело)</li>
+							<li>Свежий лес (карельская сосна)</li>
+							<!-- —  Описание
+							—  Виды соединений
+							—  Объекты -->
+							<li>Лафет (полубрус), Полулафет </li>
+							<li>Оцилиндрованное бревно</li>
+							<li>Готовые срубы </li>
+							<li>Предметы интерьера</li>
+						</ul>
+					</div>
 
 					<div class="news">
-						<p>news goes here</p>
+						<p>Новости</p>
 					</div>				
 				</div>
 
 				<div class="col col-big">
 						<div class="slider">
-							<p>slider goes here</p>
+								
 						</div>
 
 						<div class="video">
-							<p>video</p>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/cblOs8JQHpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 
 						<div class="welcome">
@@ -75,11 +77,14 @@
 
 				<div class="col">
 					<div class="search">
-						<p>search</p>
+							<form>
+									<p><input type="search" name="q" placeholder="Поиск по сайту"> 
+									<input type="submit" value="Поиск"></p>
+							</form>
 					</div>
 
 					<div class="contacts">
-						<p>contacts</p>
+						<p>Контакты</p>
 					</div>
 				</div>
 			</div>
@@ -91,5 +96,11 @@
 			<p class="footer-content">&copy; Хонкакело</p>
 		</div>
 	</footer>
+
+	<script>
+		$(document).ready(function(){
+  		$('.bxslider').bxSlider();
+		});
+	</script>
 </body>
 </html>

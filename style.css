@@ -1,8 +1,10 @@
 body {
-	background: lightgray;
 	margin: 0;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: repeat-x;
+	background-position: 0 0;
+	background-image: url('./images/main-bg.png')
 }
 
 p {
@@ -61,23 +63,50 @@ header > .container {
 }
 
 .main-content {
-	background: lightpink;
 	padding: 15px;
 	display: flex;
 }
 
 .main-content > .col {
-	background: white;
-	border: 4px dashed green;
-	padding: 20px;
 	flex: 1;
 }
 
 .main-content > .col-big {
-	flex: 2;
+    flex: 2;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .footer-content {
 	background: white;
 	padding: 10px;
+}
+
+.news {
+    background-image: url('./images/news-bg.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 306px;
+    margin-top: 22px;
+}
+
+.slider {
+    background-image: url('./images/slider.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 360px;
+
+}
+
+.contacts {
+    background-image: url('./images/contacts-bg.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 306px;
+    margin-top: 22px;
+    
+}
+
+.video {
+    margin: 25px;
 }
