@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-size: 16px;
+	font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     background-repeat: repeat-x;
 	background-position: 0 0;
@@ -110,3 +110,10 @@ header > .container {
 .video {
     margin: 25px;
 }
+
+.main-menu li:hover {
+	background: url('./images/hover-bg.png');
+	cursor: pointer;
+	
+}
+
