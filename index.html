@@ -5,8 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Page Title</title>
-	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +15,6 @@
 		<div class="container container-flexbox">
 			<a href="#" style="color: #fbf2db;">карта сайта |</a>
 			<a href="#" style="color: #b0cc3a; text-decoration: none;">Написать письмо</a>
-			
 		</div>
 	</div>
 
@@ -43,43 +43,48 @@
 	<div class="main">
 		<div class="container">
 			<div class="main-content">
-				<div class="col">
-					<div style="background: #422f1a; padding: 10px;">
-					<ul>
-							<li>Сухарник (Кело)</li>
-							<li>Свежий лес (карельская сосна)</li>
-							<!-- —  Описание
-							—  Виды соединений
-							—  Объекты -->
-							<li>Лафет (полубрус), Полулафет </li>
-							<li>Оцилиндрованное бревно</li>
-							<li>Готовые срубы </li>
-							<li>Предметы интерьера</li>
-						</ul>
-					</div>
+				<div class="debug col">
+					<ul class="side-menu">
+						<li>Сухарник (Кело)</li>
+						<li>Свежий лес (карельская сосна)</li>
+						<!-- —  Описание
+						—  Виды соединений
+						—  Объекты -->
+						<li>Лафет (полубрус), Полулафет </li>
+						<li>Оцилиндрованное бревно</li>
+						<li>Готовые срубы </li>
+						<li>Предметы интерьера</li>
+					</ul>
 
 					<div class="news">
-						<div class="news-block">
-							<h4>Новости</h4>
-							<p>19.12.2012</p>
-							<p>Открытие сайта!</p>							
-							<img class="news-pic" src="./images/news-pic.png" alt="news" style="float: left; margin: 2px;">
-							<p>Сегодня открыт новый сайт нашей компании.</p>
-							<br>														
-							<a class="green-link" href="#">Подробнее</a>
-							<br>
-							<a class="green-link" href="#">Архив новостей</a>
-						</div>
+						<h4>Новости</h4>
+						<p>19.12.2012</p>
+						<p>Открытие сайта!</p>							
+						<img class="news-pic" src="./images/news-pic.png" alt="news" style="float: left; margin: 2px;">
+						<p>Сегодня открыт новый сайт нашей компании.</p>
+						<br>														
+						<a class="green-link" href="#">Подробнее</a>
+						<br>
+						<a class="green-link" href="#">Архив новостей</a>
 					</div>				
 				</div>
 
-				<div class="col col-big">
-						<div class="slider">
-								
+				<div class="debug col col-big">
+						<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 1"></div>
+									<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 2"></div>
+									<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 3"></div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
 						</div>
 
 						<div class="video">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/cblOs8JQHpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/cblOs8JQHpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 
 						<div class="welcome">
@@ -97,7 +102,7 @@
 						</div>
 				</div>
 
-				<div class="col">
+				<div class="debug col">
 					<div class="search">
 							<form>
 									<p><input type="search" name="q" placeholder="Поиск по сайту"> 
@@ -139,10 +144,23 @@
 		</div>
 	</footer>
 
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.min.js"></script>
 	<script>
-		$(document).ready(function(){
-  		$('.bxslider').bxSlider();
-		});
+		var mySwiper = new Swiper ('.swiper-container', {
+			loop: true,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
 	</script>
 </body>
 </html>

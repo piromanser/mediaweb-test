@@ -1,10 +1,15 @@
 body {
 	margin: 0;
 	font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    background-repeat: repeat-x;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #343703;
+	background-repeat: repeat-x;
 	background-position: 0 0;
 	background-image: url('./images/main-bg.png')
+}
+
+.debug {
+	border: 2px solid white;
 }
 
 p {
@@ -68,35 +73,47 @@ header > .container {
 }
 
 .main-content {
-	padding: 15px;
+	padding: 15px 0;
 	display: flex;
 }
 
 .main-content > .col {
+	min-width: 0;
+	padding: 12px;
 	flex: 1;
 }
 
 .main-content > .col-big {
-    flex: 2;
-    margin-left: 25px;
-    margin-right: 25px;
+	flex: 2;
 }
 
 .footer-content {
-
 	padding: 10px;
 }
 
+.side-menu {
+	background: #422f1a;
+	width: 219px;
+	list-style: none;
+	margin: 0;
+	padding: 15px;
+}
+
 .news {
-    background-image: url('./images/news-bg.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 306px;
+	background-image: url('./images/news-bg.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 306px;
 	margin-top: 22px;
 	font-size: 12px;
 	text-align: left;
 	padding-left: 30px;
 	padding-right: 64px;
+}
+
+.news h4 {
+	margin: 0;
+	height: 40px;
 }
 
 .green-link {
@@ -108,21 +125,12 @@ header > .container {
 	background: url('./images/search-btn.png')
 }
 
-.slider {
-    background-image: url('./images/slider.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 360px;
-
-}
-
 .contacts {
-    background-image: url('./images/contacts-bg.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 306px;
-    margin-top: 22px;
-    
+	background-image: url('./images/contacts-bg.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	height: 306px;
+	margin-top: 22px;
 }
 
 .contacts-block {
@@ -131,17 +139,15 @@ header > .container {
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 64px;
-	
 }
 
 .video {
-    margin: 25px;
+  margin: 25px;
 }
 
 .main-menu li:hover {
 	background: url('./images/hover-bg.png');
 	cursor: pointer;
-		
 }
 
 .welcome {
