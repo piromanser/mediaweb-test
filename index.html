@@ -43,23 +43,27 @@
 	<div class="main">
 		<div class="container">
 			<div class="main-content">
-				<div class="debug col">
-					<ul class="side-menu">
-						<li>Сухарник (Кело)</li>
-						<li>Свежий лес (карельская сосна)</li>
-						<!-- —  Описание
-						—  Виды соединений
-						—  Объекты -->
-						<li>Лафет (полубрус), Полулафет </li>
-						<li>Оцилиндрованное бревно</li>
-						<li>Готовые срубы </li>
-						<li>Предметы интерьера</li>
+				<div class="col">
+					<ul class="side-menu side-menu-level-1">
+						<li><div class="side-menu-level-1-text">Сухарник (Кело)</div></li>
+						<li>
+							<div class="side-menu-level-1-text active">Свежий лес (карельская сосна)</div>
+							<ul class="side-menu-level-2">
+								<li><span class="dash">&mdash;</span> <span class="text">Описание</span></li>
+								<li><span class="dash">&mdash;</span> <span class="text">Виды соединений</span></li>
+								<li><span class="dash">&mdash;</span> <span class="text">Объекты</span></li>
+							</ul>
+						</li>
+						<li><div class="side-menu-level-1-text">Лафет (полубрус), Полулафет </div></li>
+						<li><div class="side-menu-level-1-text">Оцилиндрованное бревно</div></li>
+						<li><div class="side-menu-level-1-text">Готовые срубы </div></li>
+						<li><div class="side-menu-level-1-text">Предметы интерьера</div></li>
 					</ul>
 
 					<div class="news">
-						<h4>Новости</h4>
+						<h4 class="news-header">Новости</h4>
 						<p>19.12.2012</p>
-						<p>Открытие сайта!</p>							
+						<p><strong>Открытие сайта!</strong></p>							
 						<img class="news-pic" src="./images/news-pic.png" alt="news" style="float: left; margin: 2px;">
 						<p>Сегодня открыт новый сайт нашей компании.</p>
 						<br>														
@@ -69,83 +73,76 @@
 					</div>				
 				</div>
 
-				<div class="debug col col-big">
+				<div class="col col-big">
 						<div class="swiper-container">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 1"></div>
-									<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 2"></div>
-									<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 3"></div>
-								</div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 1"></div>
+								<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 2"></div>
+								<div class="swiper-slide"><img src="./images/slider.png" alt="Slide 3"></div>
+							</div>
 
-								<div class="swiper-pagination"></div>
+							<div class="swiper-pagination"></div>
 
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
 
 						<div class="video">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/cblOs8JQHpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe width="638" height="389" src="https://www.youtube.com/embed/cblOs8JQHpU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 
 						<div class="welcome">
 							<h4>Добро пожаловать!</h4>
-									<br>
-								<p style="font-size: 14px;">
-									Специалисты нашей компании более 15 лет занимаются строительством  и продажей домов, коттеджей, бань, беседок, охотничьих и рыболовных избушек из  уникальной сухостойной древесины Северной Карельской Сосны (kelo).
-									<br>
-									<br>
-									Мы сотрудничаем не только с  российскими заказчиками - специалисты компании ведут строительство различных объектов в Финляндии, Норвегии, Швеции, Украине.
-									<br>
-									<br>
-									Наши цены доступны для любых категорий заказчиков. Демократичность цены обусловлена персональной работой с клиентом, грамотным проектированием, подбором материалов для строительства
-                </p>
-                  <div class="print">				
-                    <a href="#" class="green-link"> <img src="./images/print.png"> версия для печати</a>						
-                  </div>	
+							<p style="font-size: 14px;">
+								Специалисты нашей компании более 15 лет занимаются строительством  и продажей домов, коттеджей, бань, беседок, охотничьих и рыболовных избушек из  уникальной сухостойной древесины Северной Карельской Сосны (kelo).
+								<br>
+								<br>
+								Мы сотрудничаем не только с  российскими заказчиками - специалисты компании ведут строительство различных объектов в Финляндии, Норвегии, Швеции, Украине.
+								<br>
+								<br>
+								Наши цены доступны для любых категорий заказчиков. Демократичность цены обусловлена персональной работой с клиентом, грамотным проектированием, подбором материалов для строительства
+							</p>
+								<div class="print">				
+									<a href="#" class="green-link"> <img src="./images/print.png"> версия для печати</a>						
+								</div>	
 						</div>
-							
 				</div>
 
-				<div class="debug col">
-					<div class="search">
-							<form>
-									<p><input type="search" name="q" placeholder="Поиск по сайту"> 
-									<input class="search-btn" type="submit" value="Поиск"></p>
-							</form>
-					</div>
+				<div class="col">
+					<form class="search-form">
+						<input type="search" name="q" placeholder="Поиск по сайту"> 
+						<input type="submit" value="Поиск">
+					</form>
 
 					<div class="contacts">
-						<div class="contacts-block" style="margin: 10px;">
-							<h4>Контакты</h4>
-								<p>2013 © Webylon 3.1</p>
-									<br>
-								<p>
-									185031 Республика Карелия, г. Петрозаводск,
-										пр. Первомайский, 00
-										тел.: (8142) 00-00-00
-										e-mail: <a class="green-link" href=#>ханкакело@mail.ru</a>										
-								</p>
-									<br>
-								<p>
-										Сайт создан в
-										<a class="green-link" href="https://mediaweb.ru/">Студии Медиавеб</a>
-								</p>
-						</div>
+						<h4 class="contacts-header">Контакты</h4>
+						<p>2013 &copy; <strong>Webylon 3.1</strong></p>
+						<p>
+							185031 Республика Карелия, г. Петрозаводск,
+							пр. Первомайский, 00
+							тел.: (8142) 00-00-00
+							e-mail: <a class="green-link" href=#>ханкакело@mail.ru</a>										
+						</p>
+						<p>
+							Сайт создан в
+							<a class="green-link" href="https://mediaweb.ru/">Студии Медиавеб</a>
+						</p>
 					</div>
 				</div>
 			</div>
-		</div >			
+		</div>			
 	</div>
 
+	<img src="./images/pine-pic.png" class="pine-pic">
+
 	<footer>
-    
-		<div class="footer-block">
-      <div style="display: flex;">
-        <img src="./images/something.png" alt="pic">
-        <p class="footer-content">&copy; Хонкакело</p>
-        <!-- <img class="pine-pic"  src="./images/pine-pic.png" alt="pinepic"> -->
-      </div>		
-    </div>
+		<div class="container">
+			<div class="footer-line"></div>
+			<div class="footer-block">
+				<img src="./images/something.png" alt="pic">
+				<p class="footer-content">&copy; Хонкакело</p>
+			</div>
+		</div>
 	</footer>
 
 	

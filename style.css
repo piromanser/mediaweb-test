@@ -5,15 +5,14 @@ body {
 	background-color: #383911;
 	background-repeat: repeat-x;
 	background-position: 0 0;
-	background-image: url('./images/main-bg.png')
+	background-image: url('./images/main-bg.png');
+	position: relative;
 }
 
-.debug {
-	border: 2px solid white;
-}
-
-p {
-	margin: 0;
+.pine-pic {
+	position: absolute;
+	bottom: 0;
+	right: 100px;
 }
 
 h4 {
@@ -65,11 +64,15 @@ header > .container {
 	list-style: none;
 	display: flex;
 	background: #e4cd9a;
+	border-top: 1px solid #7c6238;
+	border-bottom: 1px solid #7c6238;
+	font-family: serif;
 }
 
 .main-menu > li {
 	padding: 10px 15px;
-	border: 1px solid black;
+	text-transform: uppercase;
+	border-left: 1px solid #7c6238;
 }
 
 .main-content {
@@ -80,15 +83,15 @@ header > .container {
 .main-content > .col {
 	min-width: 0;
 	padding: 12px;
-	flex: 1;
 }
 
 .main-content > .col-big {
-	flex: 2;
+	flex: 1;
 }
 
 .footer-content {
-	padding: 10px;
+	margin: 0;
+	margin-left: 30px;
 }
 
 footer {
@@ -96,36 +99,103 @@ footer {
 }
 
 .footer-block {
-	margin-left: 126px;
-	width: 651px;
-	border-top: #765f32 solid 1px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 67px;
 	padding-top: 20px;
 	color: #fbf2db;
 }
 
+.footer-line {
+	width: 70%;
+	border-top: #765f32 solid 1px;
+}
+
 .side-menu {
+	box-sizing: border-box;
 	background: #422f1a;
+	color: #fbf2db;
+	font-size: 15px;
 	width: 219px;
 	list-style: none;
 	margin: 0;
-	padding: 15px;
+	padding: 8px;
+}
+
+.side-menu > li {
+	padding: 10px;
+	padding-left: 25px;
+	border-top: 1px dashed #765f32;
+	cursor: pointer;
+	position: relative;
+}
+
+.side-menu > li::before {
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 16px;
+	width: 10px;
+	height: 10px;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAABYUlEQVQoU2NkgADG4rWGcrxcf/uYmP5ZggT+/WM6/vkbc1Fv8PlHDAwM/xlBinJXGOqJCv4+IC+qJyDKrwjW+frjfYaHry99ePee3XlCxNnzjAyhoWw1cTfWiwtKejEyMTD8/vsDrJCVmYPh/z9Ghhfvn+5sXaTpxyjoEsqfnXflCTMzE8+//3+hLoFQTIzMDH///vs+dZKOJCOPZ6hoZuKF+//+/eZGUQXlMDOzfp82z0AerDAq8OI6DvYfNv/+/UM1kYmJ4cdPjiPL1usHga3W0njmoav7cA4j43+e//+hwcDIwPD/P+OXy5flU67dkNoB9gznewYJOal3ZgZad4s52X9pgpR+/8l2/cI15d5Hz4ROfRdkeAEOHgbLUA5OXmYRtv8M4n///eMFKWRmYvr8i5Hh5ffPf98wHF/9A6QQHOAMxmksQmJfOX8x/GIHCbAxsP1894r7O8PZWX9AAQ4ALNaBXTALoxIAAAAASUVORK5CYII=');
+}
+
+.side-menu-level-1-text {
+	text-decoration: underline;
+}
+
+.side-menu-level-1-text.active,
+.side-menu-level-1-text:hover {
+	text-decoration: none;
+	color: #b0cc3a;
+}
+
+.side-menu > li:first-child {
+	border-top: none;
+}
+
+.side-menu-level-2 {
+	margin-top: 10px;
+	padding-left: 20px;
+	font-family: serif;
+	list-style-type: none;
+}
+
+.side-menu-level-2 > li > span.dash {
+	color: #b0cc3a;
+}
+
+.side-menu-level-2 > li > span.text {
+	font-style: italic;
+	padding: 3px;
+	text-decoration: underline;
+}
+
+.side-menu-level-2 > li > span.text:hover {
+	color: #b0cc3a;
+	text-decoration: none;
 }
 
 .news {
+	box-sizing: border-box;
+	padding-left: 25px;
+	padding-right: 25px;
 	background-image: url('./images/news-bg.png');
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	height: 306px;
 	margin-top: 22px;
 	font-size: 12px;
-	text-align: left;
-	padding-left: 30px;
-	padding-right: 64px;
+	width: 219px;
+	height: 278px;
 }
 
-.news h4 {
+.news-header {
 	margin: 0;
-	height: 40px;
+	height: 41px;
+	line-height: 41px;
 }
 
 .green-link {
@@ -133,24 +203,22 @@ footer {
 	border: none;
 }
 
-.search-btn {
-	background: url('./images/search-btn.png')
-}
-
 .contacts {
+	box-sizing: border-box;
 	background-image: url('./images/contacts-bg.png');
 	background-position: 0 0;
 	background-repeat: no-repeat;
-	height: 306px;
 	margin-top: 22px;
+	width: 221px;
+	height: 279px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
-.contacts-block {
-	margin-top: 22px;
-	font-size: 12px;
-	text-align: left;
-	padding-left: 20px;
-	padding-right: 64px;
+.contacts-header {
+	margin: 0;
+	height: 41px;
+	line-height: 41px;
 }
 
 .video {
@@ -160,6 +228,7 @@ footer {
 .main-menu li:hover {
 	background: url('./images/hover-bg.png');
 	cursor: pointer;
+	color: #fcf2db;
 }
 
 .welcome {
@@ -173,5 +242,21 @@ footer {
 	margin-top: 72px;
 }
 
+.search-form {
+	display: flex;
+	width: 219px;
+}
 
-	
+.search-form input[type="search"] {
+	min-width: 0;
+}
+
+.search-form input[type="submit"] {
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	background-image: url('./images/search-btn.png');
+	border: none;
+	color: white;
+	width: 70px;
+	height: 29px;
+}
